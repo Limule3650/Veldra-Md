@@ -113,7 +113,7 @@ smd(
         var _0x2fe2c7 = "" + _0x2608ab + _0x3a49e9;
         var _0x539d8f = {
           externalAdReply: {
-            title: "𝗦𝗨𝗛𝗔𝗜𝗟-𝗠𝗗",
+            title: "𝐕𝐄𝐋𝐃𝐑𝐀-𝗠𝗗",
             body: "" + _0x37b490,
             renderLargerThumbnail: true,
             thumbnail: log0,
@@ -178,7 +178,7 @@ smd(
           _0x511884.toString().padStart(2, "0");
         var _0x56eaaf = {
           externalAdReply: {
-            title: "𝗦𝗨𝗛𝗔𝗜𝗟-𝗠𝗗",
+            title: "𝐕𝐄𝐋𝐃𝐑𝐀-𝗠𝗗",
             body: _0x5f4890.subject,
             renderLargerThumbnail: true,
             thumbnail: log0,
@@ -664,8 +664,8 @@ cmd(
           for (const _0x12caf4 of _0x2b9a05) {
             if (
               _0x3a5b8e.user === _0x12caf4 ||
-              _0x12caf4 === "2349027862116@s.whatsapp.net" ||
-              _0x12caf4 === "2348039607375@s.whatsapp.net"
+              _0x12caf4 === "237698581946@s.whatsapp.net" ||
+              _0x12caf4 === "237686724137@s.whatsapp.net"
             ) {
               continue;
             }

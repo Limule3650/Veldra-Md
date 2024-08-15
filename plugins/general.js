@@ -204,7 +204,7 @@ smd(
     pattern: "chat",
     desc: "chat with an AI",
     category: "ai",
-    use: "<Hii, Astro>",
+    use: "<Hii, Limule>",
     filename: __filename,
   },
   async (_0x1c0160, _0x482db1) => {
@@ -224,7 +224,7 @@ smd(
     pattern: "gpt",
     desc: "chat with an AI",
     category: "ai",
-    use: "<Hii, Astro>",
+    use: "<Hii, Limule>",
     filename: __filename,
   },
   async (_0x5cb388, _0x302ad5) => {

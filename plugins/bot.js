@@ -1,5 +1,15 @@
 const events = require(lib_dir + "/plugins.js");
-let { Config, TelegraPh, sleep, getBuffer, parsedJid, fancy, tiny, botpic, tlang } = require(lib_dir + "/config.js");
+let {
+  Config,
+  TelegraPh,
+  sleep,
+  getBuffer,
+  parsedJid,
+  fancy,
+  tiny,
+  botpic,
+  tlang
+} = require(lib_dir);
 if (!Array.isArray(global.renters)) {
   global.renters = [];
 }
@@ -54,7 +64,7 @@ try {
     category: "chats",
     desc: "set auto reply for mention",
     use: "[ url type/audio ]",
-    usage: "read  'mention wiki' to get all inforamtion of mention bro!",
+    usage: "read  'mention wiki' to get all inforamtion of mention!",
     filename: __filename
   }, async (_0x184ecd, _0x431080) => {
     mention.cmd(_0x184ecd, _0x431080);
@@ -70,7 +80,7 @@ try {
     category: "chats",
     desc: "set auto reply filter messages",
     use: "[ asta : how can i help you! ]",
-    usage: "set filter message to specific text, so that bot replied user from chat by giving text idiot!",
+    usage: "set filter message to specific text, so that bot replied user from chat by giving text!",
     fromMe: true,
     filename: __filename
   }, async (_0x126a17, _0x3ebefa) => {
@@ -107,7 +117,7 @@ try {
   });
 } catch (_0x2568c0) {
   if (!global.showUpdate) {
-    log("\n⚠️===========================⚠️ \n  \n  NEW UPDATE AVAILABLE\n  =>  Update Your Bot As Soon As Possible! 🚫\n \n Regards: David Cyril \n⚠️============================⚠️");
+    log("\n⚠️===========================⚠️ \n  \n  NEW UPDATE AVAILABLE\n  =>  Update Your Bot As Soon As Possible! 🚫\n \n Regards: Limule Solitarus \n⚠️============================⚠️");
     global.showUpdate = true;
   }
 }
@@ -227,7 +237,6 @@ smd(
     category: "general",
     filename: __filename,
     use: "alive",
-    react: "🙋🏽‍♂️",
   },
   async (message, input) => {
     try {
@@ -235,7 +244,7 @@ smd(
       const designs = [
         async () => {
           const imageBuffer = await axios.get(
-            "https://telegra.ph/file/6fd18b9f6e7e4f9499847.jpg",
+            "https://telegra.ph/file/db8f59d2788b3a0f9614c.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -258,14 +267,14 @@ smd(
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://telegra.ph/file/6fd18b9f6e7e4f9499847.jpg",
+            "https://telegra.ph/file/db8f59d2788b3a0f9614c.jpg",
             {
               responseType: "arraybuffer",
             }
           );
 
           const factResponse = await axios.get(
-            "https://api.maher-zubair.tech/misc/quote"
+            "https://api.maher-zubair.tech/misc/fact"
           );
           const fact = factResponse.data;
           if (!fact || fact.status !== 200) {
@@ -274,20 +283,20 @@ smd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `VELDRA-MD\n\n*ʀᴇsᴘᴏɴsᴇ ʀᴀᴛᴇ:* ${pingSeconds} seconds\n\n*Fact:*\n${fact.result.fact}\n\nVELDRA MD BOT`;
+          const captionText = `VELDRA-MD\n\n*ʀᴇsᴘᴏɴsᴇ ʀᴀᴛᴇ:* ${pingSeconds} seconds\n\n*Fact:*\n${fact.result.fact}\n\nVELDRA-MD`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://telegra.ph/file/6fd18b9f6e7e4f9499847.jpg",
+            "https://telegra.ph/file/db8f59d2788b3a0f9614c.jpg",
             {
               responseType: "arraybuffer",
             }
           );
 
           const lineResponse = await axios.get(
-            "https://api.maher-zubair.tech/misc/quote"
+            "https://api.maher-zubair.tech/misc/lines"
           );
           const line = lineResponse.data;
           if (!line || line.status !== 200) {
@@ -784,7 +793,7 @@ smd({
       id: "bot_" + _0x50364b.user
     }));
     if (!_0x1f0ea7) {
-      return await _0x50364b.send("*_Auto_Bio currently bro_*" + (bio.autobio == "false" ? "Disabled_*\n\nUse *" + prefix + "autobio on* to turn on auto_bio!" : "Enabled_*\n*Currently Set:* " + (bio.autobio == "true" || bio.autobio == "on" ? "@line, ⏰Time: @time 🚀@bot" : bio.autobio) + "\n\nUse *" + prefix + "autobio off* to turn off auto_bio!") + "\n  \n  Also update status: *" + prefix + "autobio @bot(botName) @time @date @line(pickupline) @quote*\n  ");
+      return await _0x50364b.send("*_Auto_Bio currently *" + (bio.autobio == "false" ? "Disabled_*\n\nUse *" + prefix + "autobio on* to turn on auto_bio!" : "Enabled_*\n*Currently Set:* " + (bio.autobio == "true" || bio.autobio == "on" ? "@line, ⏰Time: @time 🚀@bot" : bio.autobio) + "\n\nUse *" + prefix + "autobio off* to turn off auto_bio!") + "\n  \n  Also update status: *" + prefix + "autobio @bot(botName) @time @date @line(pickupline) @quote*\n  ");
     }
     let _0x3d9e60 = _0x1f0ea7.toLowerCase().split(" ")[0].trim();
     if (_0x3d9e60 === "off" || _0x3d9e60 === "disable" || _0x3d9e60 === "deact") {
@@ -828,7 +837,7 @@ smd({
       abioJob = cron.schedule("*/1.5 * * * *", async () => {
         try {
           var _0x4b4b3b = "`";
-          let _0x34c0a6 = bio.autobio == "true" || bio.autobio == "on" ? "Auto Bio By QUEEN_ANITA-V2, ⏰Time: @time 🚀@bot" : bio.autobio;
+          let _0x34c0a6 = bio.autobio == "true" || bio.autobio == "on" ? "Auto Bio By VELDRA-MD, ⏰Time: @time 🚀@bot" : bio.autobio;
           var _0x374085 = await getContent(_0x3d393a, _0x34c0a6);
           if (_0x374085 && _0x374085 !== "false") {
             await _0x3d393a.bot.updateProfileStatus(_0x374085);
@@ -908,7 +917,7 @@ events.cmd({
   try {
     let _0x35816f = global.renters;
     if (!_0x35816f || !_0x35816f[0]) {
-      return await _0x48b928.reply("*No user has rent 'VELDRA-MD' yet bro!*");
+      return await _0x48b928.reply("*No user has rent 'VELDRA-MD' yet!*");
     }
     let _0x14cff4 = [...new Set([..._0x35816f.filter(_0x2822d6 => _0x2822d6.user).map(_0x2b342c => _0x2b342c.user)])];
     if (!_0x14cff4 || !_0x14cff4[0]) {
@@ -949,7 +958,7 @@ events.cmd({
   try {
     let _0x21c25c = global.renters;
     if (!_0x21c25c || !_0x21c25c[0]) {
-      return await _0x5d40b9.reply("*No user has rent 'VELDRA-MD' yet bro!*");
+      return await _0x5d40b9.reply("*No user has rent 'VELDRA-MD' yet!*");
     }
     let _0x3c0e18 = _0x5d40b9.reply_message ? _0x5d40b9.reply_message.sender : _0x5d40b9.mentionedJid[0] ? _0x5d40b9.mentionedJid[0] : false;
     let _0x2e6489 = (_0xb3196a.split(" ")[0] || "")?.replace(/[\s+]/g, "") || "";
@@ -982,7 +991,7 @@ events.cmd({
 }, async (_0x52616f, _0x2d6ee3) => {
   try {
     if (!_0x2d6ee3) {
-      return _0x52616f.reply("*provide cmdName to disable for share user man!*");
+      return _0x52616f.reply("*provide cmdName to disable for share user!*");
     }
     let _0x41fff7 = global.renters;
     if (!_0x41fff7 || !_0x41fff7[0]) {
@@ -1212,7 +1221,7 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
         }).child({
           level: "silent"
         }),
-        browser: _0x235024.type === "pair" ? ["Mac OS", "Safari", "3.1.0"] : ["Share [QUEEN_ANITA-V2] by [" + Config.ownername + "]", "Chrome", "1.0.0"],
+        browser: _0x235024.type === "pair" ? ["Mac OS", "Safari", "3.1.0"] : ["Share [VELDRA-MD] by [" + Config.ownername + "]", "Chrome", "1.0.0"],
         generateHighQualityLinkPreview: true,
         markOnlineOnConnect: false,
         auth: {
@@ -1738,7 +1747,7 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
             }
             print("RENT BOT :  ✅ Whatsapp Login Successful!");
             global.renters.push(_0x1a9455);
-            let _0x1221e4 = "┌───⭓\n❒  [VELDRA-MD SHARING RUNNING] \n❒  Prefix : [ " + (prefix || "null") + " ]\n❒  Mode : " + Config.WORKTYPE + "\n❒  Plugins : " + events.commands.length + "";
+            let _0x1221e4 = "┌───⭓\n❒  [VELDRQ-MD SHARING RUNNING] \n❒  Prefix : [ " + (prefix || "null") + " ]\n❒  Mode : " + Config.WORKTYPE + "\n❒  Plugins : " + events.commands.length + "";
             await _0x8bf7a7.reply("*SHARE MODE*\n*Now @" + _0x517212 + " Have own whatsapp bot!*:", {
               mentions: [_0x459047]
             }, "smd");
@@ -1751,14 +1760,14 @@ const Rentt = async (_0x1b984f, _0x8bf7a7, _0x181a7a = "", _0x235024 = {}) => {
               contextInfo: {
                 externalAdReply: {
                   title: "VELDRA-MD Sharing",
-                  sourceUrl: "https://whatsapp.com/channel/0029Vafhjw0IXnlonRAQMM2l"
+                  sourceUrl: "https://whatsapp.com/channel/0029VaeRru3ADTOEKPCPom0L"
                 }
               }
             }, {
               disappearingMessagesInChat: true,
               ephemeralExpiration: 86400
             });
-          } 
+          }
           if (_0x3d78c6 === "close") {
             try {
               let _0xb073c3 = new Boom(_0x289aef?.error)?.output.statusCode;

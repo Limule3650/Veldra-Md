@@ -151,7 +151,11 @@ astro_patch.smd(
   ${menuThemeCommandPrefix} *𝚄𝚂𝙰𝙶𝙴 𝚃𝚁𝙴𝙽𝙳:* ${trend_usage}
   ${menuThemeCommandPrefix} *𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴:* ${database_info}
   ${menuThemeFooter}\n                         
-  🇻 🇪 🇱 🇩 🇷 🇦 
+  ┏━━━━━━━━━━━━⍟
+  ┃𝐕𝐄𝐋𝐃𝐑𝐀 𝐁𝐎𝐓 𝐌𝐃
+  ┃𝐁𝐘 𝐋𝐈𝐌𝐔𝐋𝐄 𝐒𝐎𝐋𝐈𝐓𝐀𝐑𝐔𝐒
+  ┗━━━━━━━━━━━━━━━━⍟
+  `©VELDRA-MD`
   \n${readmore}\n`;
 
       for (const category in categorizedCommands) {
