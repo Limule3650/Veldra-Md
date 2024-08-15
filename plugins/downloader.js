@@ -539,7 +539,7 @@ smd({
     if (isNaN(soundNumber) || soundNumber < 1 || soundNumber > 160) {
       return client.reply("*_❌ Give a number between 1 to 160_*");
     }
-    let soundUrl = (link unavailable);
+    let soundUrl = '(link "unavailable")';
     let soundBuffer = await getBuffer(soundUrl);
     let contextInfo = await client.bot.contextInfo(Config.botname, `ᴛɪᴋᴛᴏᴋ ꜱᴏᴜɴᴅ ${soundNumber}`);
     let message = {
