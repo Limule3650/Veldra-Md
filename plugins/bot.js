@@ -9,7 +9,7 @@ let {
   tiny,
   botpic,
   tlang
-} = require(lib_dir);
+} = require(lib_dir + "/config.js");
 if (!Array.isArray(global.renters)) {
   global.renters = [];
 }
