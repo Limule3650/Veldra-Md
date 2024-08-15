@@ -44,17 +44,6 @@ smd({
     return await _0x5f0a63.error(_0xb1d121 + "\n\ncmdName: sticker\n");
   }
 });
-const StickerTypes = {
-  FULL: 'full',
-  CROPPED: 'cropped'
-};
-
-async function generateSticker(message, media, config) {
-  const sharp = require('sharp');
-  const sticker = await sharp(media).resize(512, 512).toBuffer();
-  await message.sendImage(sticker, config.pack, config.author);
-}
-
 smd({
   cmdname: "take",
   info: "Makes sticker of replied image/video.",
