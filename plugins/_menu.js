@@ -155,7 +155,7 @@ astro_patch.smd(
   ┃𝐕𝐄𝐋𝐃𝐑𝐀 𝐁𝐎𝐓 𝐌𝐃
   ┃𝐁𝐘 𝐋𝐈𝐌𝐔𝐋𝐄 𝐒𝐎𝐋𝐈𝐓𝐀𝐑𝐔𝐒
   ┗━━━━━━━━━━━━━━━━⍟
-  `©VELDRA-MD`
+  ©VELDRA-MD
   \n${readmore}\n`;
 
       for (const category in categorizedCommands) {
