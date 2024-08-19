@@ -14,7 +14,7 @@ global.owner = process.env.OWNER_NUMBER
   ? process.env.OWNER_NUMBER.replace(/[\s+]/g, "")
   : "237698581946";
 global.THUMB_IMAGE =
-  process.env.THUMB_IMAGE ||
+  process.env.THUMB_IMAGE ||"https://telegra.ph/file/fb8ca4b8616b5710ce60f.jpg"
   process.env.IMAGE ||
   "https://telegra.ph/file/1496d1ee606e8946930bd.jpg";
 global.userImages =
