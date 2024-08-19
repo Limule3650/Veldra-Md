@@ -2,9 +2,8 @@
   "name": "veldra-md",
   "description": "Veldra a simple WhatsAppp Bot",
   "logo": "https://telegra.ph/file/1496d1ee606e8946930bd.jpg",
-  "keywords": "Veldra",
-  "success_url": "/Asta/",
-  "app_url": "/qr/",
+  "keywords": "[Veldra-Md,Limule Solitarus]",
+  "success_url": "/",
 
   "env": {
     "HEROKU_API_KEY": {
